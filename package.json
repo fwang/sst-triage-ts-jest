@@ -1,8 +1,6 @@
 {
-  "name": "sst-triage-ts-jest",
+  "name": "serviceA",
   "version": "0.1.0",
-  "main": "index.js",
-  "license": "MIT",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -16,11 +14,12 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.114.0",
-    "lerna": "^3.22.1"
+    "@types/aws-lambda": "^8.10.70",
+    "@types/jest": "^27.0.1"
   },
   "dependencies": {
+    "@aws-cdk/core": "1.114.0",
     "@serverless-stack/cli": "0.40.5",
-    "@serverless-stack/resources": "0.40.5",
-    "@aws-cdk/core": "1.114.0"
+    "@serverless-stack/resources": "0.40.5"
   }
 }
